@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     
     
     ### start 3th party ###
-
+    
+    'bootstrap4',
+   
     ### start apps ###
 
     'apps.contacts',
