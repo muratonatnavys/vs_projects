@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     ### start apps ###
   
     'apps.contacts',
+    'apps.services',
+    'apps.about',
 
     ### end apps ##
 

@@ -26,7 +26,7 @@
   <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %} rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %} "rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
@@ -55,7 +55,7 @@
           <li><a class="nav-link scrollto active" href="{% url 'home:home'%}">
             ГЛАВНАЯ СТРАНИЦА</a></li>
           <li><a class="nav-link scrollto" href="{% url 'about:about'%}">О НАС</a></li>
-          <li><a class="nav-link scrollto" href="#services">УСЛУГИ</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'services:service'%}">УСЛУГИ</a></li>
           <li class="dropdown"><a href="#"><span>ПРОЕКТЫ</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -169,9 +169,9 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Полезные ссылки</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">ГЛАВНАЯ СТРАНИЦА</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">О НАС</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">УСЛУГИ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home:home'%}">ГЛАВНАЯ СТРАНИЦА</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about:about'%}">О НАС</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services:service'%}">УСЛУГИ</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">ПРОЕКТЫ</a></li>
               
             </ul>
@@ -180,7 +180,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Наши услуги</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">автоматизации зданий</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services:bms'%}">автоматизации зданий</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">автоматизации энергетических ресурсов </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Системы обнаружения пожара </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Системы аварийного оповещения</a></li>

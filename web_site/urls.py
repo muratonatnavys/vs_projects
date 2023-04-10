@@ -23,8 +23,8 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', include('apps.home.urls', namespace= "home")),
-    path ('about', include('apps.about.urls', namespace = "about")),
-    ##path ('project',), include('apps.project.urls', name = "project"),##
-    ##path ('services',), include('apps.services.urls', name = "services"),##
+    path ('about/', include('apps.about.urls', namespace= "about")),
+    ##path ('project',), include('apps.project.urls', namespace = "project"),##
+    path ('services/', include('apps.services.urls', namespace= "services")),
     path ('contacts/', include('apps.contacts.urls', namespace= "contacts")),
 ]
